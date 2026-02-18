@@ -1,0 +1,19 @@
+# Supabase project config (used by CLI for deploy, link, etc.).
+# See https://supabase.com/docs/guides/functions/function-configuration
+
+[project]
+# project_id is set by: supabase link --project-ref <ref>
+
+# Allow OPTIONS (CORS preflight) to reach the function without a JWT.
+# The functions themselves require Authorization for POST and return 401 if missing.
+[functions.license-check]
+verify_jwt = false
+
+[functions.register-device]
+verify_jwt = false
+
+[functions.create-checkout-session]
+verify_jwt = false
+
+[functions.stripe-webhook]
+verify_jwt = false

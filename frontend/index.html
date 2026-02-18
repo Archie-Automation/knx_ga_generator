@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>License check</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Webtool – License check</h1>
+
+    <section class="status-panel" aria-live="polite">
+      <h2>Inlogstatus</h2>
+      <p id="loginStatus">Controleren…</p>
+      <p id="loginEmail" class="muted"></p>
+    </section>
+
+    <section class="status-panel" aria-live="polite">
+      <h2>Licentie</h2>
+      <p id="licenseStatus">Nog niet gecontroleerd.</p>
+      <p id="licensePlan" class="muted"></p>
+      <p id="licenseValidUntil" class="muted"></p>
+    </section>
+
+    <button id="checkBtn">Check License</button>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
